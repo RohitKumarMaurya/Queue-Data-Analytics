@@ -12,12 +12,16 @@ The project aims at providing a good user experience of the service windows to t
 
 
 Description:- 
+
 Front End 
+
 • User requests queue length for a specific counter via the webpage. 
 • On the request of live count the web page fetches the live count from the respective web (hosted by flask) address of the cam‟s live count using xhttp request and displays it on the webpage. 
 • Similarly it also fetches the historical from the respective web (hosted by flask) address of the cam‟s historical data using xhttp request and displays it on the webpage on the historical data request. 
 • The data on the webpage is modified using Ajax. 
+
 Back End 
+
 • Webcam/ Security camera captures the video feed. 
 • The captured video feed is processed by Opencv library frame by frame which returns a numpy array respective to each and every frame in the video feed. 
 • The numpy array data is processed by Tensorflow object detection API(ssd_mobilenet_v1_coco model) which detects the specified target objects ("person") and returns count of the same. 
