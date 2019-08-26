@@ -1,10 +1,13 @@
 # Queue-Data-Analytics
+
 PROBLEM STATEMENT
+
 Long lines at some specific time ticketing windows and services counter at Railway station, Bus stand, RTO office, Banks and other places could lead to bad services experiences. On many occasions lines are longer at specific time of day but empty/short at other times. It would be very user if real-time and historical queue length can be made available via website or mobile app to user and facility managers. This would in longterm help deliver better experience and smarter cities. Key technical challenge to solve this problem is to identify persons in specific area. 
  
  The proposed solution is to develop a web application where real-time and historical queue length will be made available to the user and facility managers. Raspberry-pi with cam / webcams with computational power use Tensorflow object detection API to process the video frames for every fixed interval to obtain the number of people detected. The count of people is stored in a file and also recorded in a historical log file along with the timestamp and camera id. The count is then displayed on the front end on a web page along with the historical data upon users or facility manager‟s request.
  
 INTRODUCTION
+
 The project targets on providing a user-friendly interface so that the user can refer to the service counter of his/her choice and get the current queue length of the requested service window of his/her city. 
 
 The project is based on machine learning approaches to detect the objects of specified type captured via security cameras and to count the detected objects. 
